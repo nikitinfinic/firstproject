@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Про нас{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Про нас</h1>
+    <p>Про Эльвинку</p>
+    <img src= "{% static 'main/img/photo_2024-08-30_20-30-06.jpg' %}" alt="Лого" width="250" height="250">
+    <p>Про Никитку</p>
+    <img src= "{% static 'main/img/photo_2024-08-31_20-20-13.jpg' %}" alt="Лого" width="250" height="250">
+</div>
+{% endblock %}

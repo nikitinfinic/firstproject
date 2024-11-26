@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <p>{{ article.anons }}</p>
+    {% if article.image %}
+        <img src="{{ article.image.url }}" alt="photo">
+    {% else %}
+        <p> Изображение недоступно </p>
+    {% endif%}
+    <p>{{ article.full_text }}</p>
+    <p> {{ article.date }}</p>
+{% endblock %}
